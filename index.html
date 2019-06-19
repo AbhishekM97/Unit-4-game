@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>star wars RPG game</title>
+    <!--CSS Reset link-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--CSS link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--link to Jquery Libraries-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<header>
+    <h1>Star Wars RPG!</h1>
+</header>
+<body>
+    <div id="container">
+        <div id="characters">
+            <ul>
+                <li class="character good" id="Yoda" onclick="SelectPlayer()">
+                    <h3>Yoda</h3>
+                    <img id="Yoda"src="assets/images/Yoda.jpg">
+                    <h3>hp 150</h3>
+                </li>
+                <li class="character good" id="OWK" onclick="SelectPlayer()">
+                    <h3>Obi Wan Kenobi</h3>
+                    <img id="OWK" src="assets/images/ObiWanKenobi.jpg">
+                    <h3>hp 150</h3>
+                </li>
+                <li class="character bad" id="DV" onclick="SelectPlayer()">
+                    <h3>Darth Vader</h3>
+                    <img id="DV" src="assets/images/DarthVader.jpg">
+                    <h3>hp 500</h3>
+                </li>
+                <li class="character bad" id="DM" onclick="SelectPlayer()">
+                    <h3>Darth Maul<h3>
+                    <img id="DM" src="assets/images/DarthMaul.jpg">
+                    <h3>hp 350</h3>
+                </li>
+                <li class="character bad" id="Grevious" onclick="SelectPlayer()">
+                    <h3>Grevious</h3>
+                    <img id="Grevious" src="assets/images/Grevious.jpg">
+                    <h3>hp 250</h3>
+                </li>
+            </ul>
+        </div>
+        <div id="player">
+            <h2>Your Character</h2>
+        </div>
+        <h2>Enemies available to attack</h2>
+        <div id="enemies"></div>
+            <ul>
+                <li class="character good" id="Yoda" onclick="SelectPlayer()">
+                    <h3>Yoda</h3>
+                    <img id="Yoda"src="assets/images/Yoda.jpg">
+                    <h3>hp 150</h3>
+                </li>
+                <li class="character good" id="OWK" onclick="SelectPlayer()">
+                    <h3>Obi Wan Kenobi</h3>
+                    <img id="OWK" src="assets/images/ObiWanKenobi.jpg">
+                    <h3>hp 150</h3>
+                </li>
+                <li class="character bad" id="DV" onclick="SelectPlayer()">
+                    <h3>Darth Vader</h3>
+                    <img id="DV" src="assets/images/DarthVader.jpg">
+                    <h3>hp 500</h3>
+                </li>
+                <li class="character bad" id="DM" onclick="SelectPlayer()">
+                    <h3>Darth Maul<h3>
+                    <img id="DM" src="assets/images/DarthMaul.jpg">
+                    <h3>hp 350</h3>
+                </li>
+                <li class="character bad" id="Grevious" onclick="SelectPlayer()">
+                    <h3>Grevious</h3>
+                    <img id="Grevious" src="assets/images/Grevious.jpg">
+                    <h3>hp 250</h3>
+                </li>
+            </ul>
+        </div>
+        <div id="fight">
+            <button id="attack" type="button" onclick="attack()">Attack</button>
+        </div>
+        <div id="defend">
+            <h2>defender</h2>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+<footer>@Copyright 2019</footer>
+</html>
